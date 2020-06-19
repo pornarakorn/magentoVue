@@ -2,12 +2,24 @@
   <div id="app">
     <div class="before_nav">
       <img class="logo" src="img/logo_yellow.png" alt="logo">
-      <div class="search" >
+      <div class="search">
         <b-nav-form>
-      <b-form-input class="mr-sm-2" placeholder="Search"></b-form-input>
-      <b-button variant="outline-success" class="my-2 my-sm-0" type="submit">Search</b-button>
-      <b-icon icon="cart-3" font-scale="2" class="icon" ></b-icon>
-    </b-nav-form>
+          <b-input-group>
+            <b-form-input placeholder="Search"></b-form-input>
+            <b-input-group-append>
+              <b-button variant="success">
+                <b-icon icon="search"></b-icon>
+              </b-button>
+            </b-input-group-append>
+          </b-input-group>
+          <b-icon icon="cart-3" font-scale="2" class="icon"></b-icon>
+        </b-nav-form>
+        <b-nav-form class="login">
+          <p>Create Account <b-icon icon="person-plus-fill"></b-icon>
+          </p>
+          <p>Log In <b-icon icon="person-fill"></b-icon>
+          </p>
+        </b-nav-form>
       </div>
     </div>
     <br>
@@ -75,10 +87,22 @@
     margin-top: 20px;
   }
 
+  .login {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .login p {
+    margin-left: 20px;
+  }
+
   .icon {
     margin-left: 30px;
     margin-right: 20px;
   }
+
 
   .nav {
     background: #c8fdaf;
